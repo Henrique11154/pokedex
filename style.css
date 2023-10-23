@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.div{
+    margin: 2em 0 0 25%;
+    width: 45%;
+    height: 38em; 
+    background-color: rgba(196, 196, 10, 0.391);
+    padding: 1rem 3rem;
+}
+#select{
+    font-size: 1.2rem;
+    background-color: rgba(15, 222, 153, 0.346);
+    margin: 0 32%;
+    border: 1px solid black;
+}
+#select option{
+    
+}
