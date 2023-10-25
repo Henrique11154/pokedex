@@ -1,6 +1,8 @@
 let select = document.querySelector("#select")
+let url = "https://pokemon.danielpimentel.com.br/v1/"
 let nomes = "https://pokemon.danielpimentel.com.br/v1/pokemon/lista"
-let div = document.querySelector(".div")
+let div = document.querySelector("#div")
+var pk = document.querySelector("#btnMp")
 function pegarPokemon(url){
     for(let i = 0; i <= 904; i++){
         fetch(url).then(resposta => resposta.json())
@@ -10,7 +12,4 @@ function pegarPokemon(url){
 }
 pegarPokemon(nomes)
 
-function mostrarPokemon(){
-    nameValue = ab.value
-    console.log(nameValue)
-}
+
