@@ -1,13 +1,19 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(Pk\ Arceus.jpg);
+    background-image: url(img/Pk\ Arceus.jpg);
     background-size: cover;
+}
+#bntVorta{
+    margin: 1rem 1.8rem;
+    height: 2.5em;
+    width: 2em;
+    cursor: pointer;
 }
 #div{
     margin: 2em 0 0 25%;
     width: 45%;
-    height: 50em; 
+    height: 45em; 
     background-color: #ebf2f3bd;
     align-items: center;
 }
@@ -17,14 +23,20 @@ body{
     justify-content: center;
     padding: 0.8em;
 }
+
 #select{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     background-color: #c24b51a5;
     border: 1px solid black;
     margin-right: 1.5em;
 }
-#btnMp{
+#divB img{
     height: 70px;
     width: 70px;
     cursor: pointer;
+}
+
+#divB p{
+    font-size: 2rem;
+    font-family: fantasy
 }
