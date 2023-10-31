@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(Pk Arceus.jpg);
+    background-image: url(img/Pk\ Arceus.jpg);
     background-size: cover;
 }
 #bntVorta{
@@ -23,6 +23,14 @@ body{
     justify-content: center;
     padding: 0.8em;
 }
+#divB div{
+    margin: 0 1em;
+}
+
+#divB div img{
+    height: 100px;
+    width: 160px;
+}
 
 #select{
     font-size: 1.5rem;
@@ -37,6 +45,6 @@ body{
 }
 
 #divB p{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: fantasy
 }

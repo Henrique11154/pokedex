@@ -2,11 +2,21 @@ alert("Clique na pokebola para mostrar o pokemon")
 
 // Daniel não esquece de ler o alert
 
-
 let select = document.querySelector("#select")
 let url = "https://pokemon.danielpimentel.com.br/v1/"
-let div = document.querySelector("#div")
+let div = document.querySelector("#divB")
 let pk = document.querySelector("#btnMp")
+let vorta = document.querySelector("#bntVorta")
+vorta.addEventListener('click', vortar)
+
+function vortar(){
+    div.innerHTML = `
+            <select id="select">
+                ${pegarPokemon(url+"pokemon/lista")}
+            </select>
+            <img src="img/pokebola.jpg" id="btnMp">`
+}
+
 function pegarPokemon(url){
     for(let i = 0; i <= 904; i++){
         fetch(url).then(resposta => resposta.json())
@@ -14,7 +24,6 @@ function pegarPokemon(url){
         .catch(erro => console.error(erro))
     }
 } 
-pegarPokemon(url + "pokemon/lista")
 
 pk.addEventListener('click',mostrarPK);
 
@@ -34,6 +43,6 @@ function mostrarPK(){
     <h2> evoluções: ${infopk.pokemon.evolucoes}
     </div>`)
     .catch(er => console.erro(er))
-
 }
 
+pegarPokemon(url + "pokemon/lista")
